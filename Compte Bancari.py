@@ -27,4 +27,3 @@ complementari1.ingresar = (422)
 complementari1.retirar_dinerS = (100)
 
 print(complementari.consultar_saldo)
-

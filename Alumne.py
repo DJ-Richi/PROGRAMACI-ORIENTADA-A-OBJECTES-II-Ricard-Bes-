@@ -11,17 +11,15 @@ class Alumne:
     def __init__(self, edat=0):
         self.__edat = edat
 
-    @property
-    def edat(self):
+    def get_edat(self):
         return self.__edat
 
-    @edat.setter
-    def edat(self, valor):
+    def set_edat(self, valor):
         if valor < 0:
             return ValueError("L'edat no pot ser negativa")
         self.__edat = valor
 
-a = Alumne(15)
+a = Alumne(0)
 print(a.edat)
 
 a.edat = 18

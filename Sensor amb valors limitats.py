@@ -11,21 +11,16 @@ class Sensor:
     def __init__(self, valor=0):
         self.__valor = valor
 
-    @property
-    def valor(self):
+
+    def get_valor(self):
         return self.__valor
 
-    @valor.setter
-    def valor(self, nou_valor):
+
+    def set_valor(self, nou_valor):
         if 0 <= nou_valor <= 100:
             self.__valor = nou_valor
-        else:
-            return ValueError("El valor ha d'estar entre 0 i 100")
 
 s = Sensor()
 
-s.valor = 75
-print(s.valor)
-
-s.valor = 101
+s.valor = 35
 print(s.valor)

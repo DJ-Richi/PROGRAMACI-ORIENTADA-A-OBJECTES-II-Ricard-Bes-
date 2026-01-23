@@ -10,7 +10,7 @@
 class estudiant:
     def __init__(self, nota):
         self._nota = nota
-
+    
     def consultar_nota(self):
         return self._nota
 

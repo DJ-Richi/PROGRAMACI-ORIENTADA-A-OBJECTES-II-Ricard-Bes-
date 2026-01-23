@@ -11,12 +11,10 @@ class CompteUsuari:
     def __init__(self, email):
         self.email = email
 
-    @property
-    def email(self):
+    def get_email(self):
         return self.__email
 
-    @email.setter
-    def email(self, valor):
+    def set_email(self, valor):
         if "@" in valor and "." in valor:
             self.__email = valor
         else:

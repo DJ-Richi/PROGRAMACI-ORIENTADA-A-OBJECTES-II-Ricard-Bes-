@@ -11,11 +11,10 @@ class Joc:
     def __init__(self):
         self.__puntuacio = 0
 
-    @property
-    def puntuacio(self):
+    def get_puntuacio(self):
         return self.__puntuacio
 
-    def sumar_punts(self, punts):
+    def set_sumar_punts(self, punts):
         if punts > 0:
             self.__puntuacio += punts
         else:

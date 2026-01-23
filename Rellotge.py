@@ -11,12 +11,11 @@ class Rellotge:
     def __init__(self, hores=0):
         self.__hores = hores
 
-    @property
-    def hores(self):
+    def get_hores(self):
         return self.__hores
 
-    @hores.setter
-    def hores(self, valor):
+
+    def set_hores(self, valor):
         if 0 <= valor <= 23:
             self.__hores = valor
         else:

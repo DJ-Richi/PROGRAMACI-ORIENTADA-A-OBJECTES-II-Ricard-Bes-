@@ -1,7 +1,7 @@
 # Administració de Sistemes Informàtics en Xarxa
 # 
 # Autor: Ricard Bes Guimerà
-# Data: 21/01/2026
+# Data: 22/01/2026
 # Versió: 1
 #
 # Descripció: Crea una classe Estudiant amb un atribut protegit _nota. Afegeix mètodes per:
@@ -11,6 +11,7 @@ class Termostat:
     def __init__(self, temperatura):
         self.__temperatura = temperatura
 
+    @property
     def temperatura(self):
         return self.__temperatura
 
